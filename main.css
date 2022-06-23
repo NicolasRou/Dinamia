@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+}
+body {
+  background-color: #e3e2e4;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Header */
+header {
+  display: block;
+  width: 100%;
+  background: url(assets/img/rollo-celeste.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.header {
+  display: flex;
+}
+.nav-bar {
+  display: inline-block;
+  list-style: none;
+  text-align: right;
+  width: 70%;
+  min-width: 10%;
+  margin-top: 100px;
+  font-size: x-large;
+}
+.logo img {
+  width: 100%;
+}
+.logo {
+  width: 27%;
+}
+header ul {
+  display: inline-block;
+  margin: 0.5em auto;
+  text-align: center;
+  margin-top: 10px;
+}
+.main-nav {
+  display: flex;
+  justify-content: center;
+}
+.nav-item {
+  display: inline;
+}
+.nav-item a {
+  text-decoration: none;
+  color: #04702c;
+  position: relative;
+  margin-left: 25px;
+  font-weight: 500;
+}
+.nav-item a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.nav-item a:hover::before {
+  transform: scaleX(1);
+}
+
+.nav-item ::after {
+  content: "";
+  margin-left: 25px;
+}
+.title {
+  width: 50%;
+  margin: 20px;
+}
+.title h2 {
+  font-weight: 200;
+  font-size: 1.8em;
+}
+
+/* Estilos del main */
+main {
+  background-color: #445550;
+}
+.container {
+  margin: 0 10%;
+  background-color: #daccbf;
+}
+section {
+  padding: 50px;
+}
+.text h3 {
+  font-weight: 200;
+  font-size: 1.5em;
+}
+.img-main {
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+.img-container img {
+  margin: 5%;
+  width: 60%;
+}
+
+/* Contacto */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+}
+.contactanos {
+    display: flex;
+    justify-content: center;
+}
+.contact {
+    justify-content: center;
+    display: flex;
+    gap: 10%;
+}
