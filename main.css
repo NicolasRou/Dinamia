@@ -8,7 +8,7 @@ body {
   /* background-color: #e3e2e4; */
   width: 100%;
   height: 100%;
-  animation: fadeIn 5s;
+  animation: fadeIn 3s;
 }
 button {
   cursor: pointer;
@@ -104,7 +104,7 @@ header {
   width: 27%;
 }
 header ul {
-  display: inline-block;
+  /* display: inline-block; */
   margin: 0.5em auto;
   text-align: center;
   margin-top: 10px;
@@ -121,7 +121,6 @@ header ul {
   color: white;
   position: relative;
   margin-left: 25px;
-  font-weight: 500;
   font-weight: 200;
 }
 .nav-item a::before {
@@ -197,16 +196,24 @@ header ul {
   transform: scale(1.1);
 }
 
-.imgPilates {
-  width: 90%;
+.slider__img {
+  width: 80%;
   height: 90%;
   border-radius: 10px;
+  object-fit: fill;
+}
+.slider__img1 {
+  width: 80%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
 }
 .slider {
   overflow: hidden;
   width: 100%;
   margin: 60px 0 0 0;
   text-align: center;
+  
 }
 .slider ul {
   display: flex;
@@ -250,30 +257,36 @@ header ul {
   }
 }
 
-.img-container {
+/* .img-container {
   display: flex;
   justify-content: center;
 }
 .img-container img {
   margin: 5%;
   width: 60%;
-}
+} */
 /* --------INFO MID---------- */
 
 .container {
   background-color: white;
   margin-top: 100px;
 }
-.container__aside {
+.content__aside__a {
+  text-decoration: none;
+  color: black;
+  
+}
+.content__aside {
   margin: 10%;
    display: flex;
   gap: 15%;
 }
-.container__aside h3 {
+.content__aside h3 {
   font-weight: 200;
   font-size: 3em;
+  margin-bottom: 20px;
 }
-.container__aside__btn {
+.content__aside__btn {
   background-color: #04702c;
   border-radius: 20px;
   font-size: larger;
@@ -283,11 +296,11 @@ header ul {
   margin-top: 4rem;
   transition: 0.5s;
 }
-.container__aside__btn a {
+.content__aside__btn a {
   text-decoration: none;
   color: white;
 }
-.container__aside__btn:hover {
+.content__aside__btn:hover {
   color: #2a3342;
   box-shadow: 0 4px 16px #2ad167;
   transition: all 0.5s ease;
@@ -317,6 +330,7 @@ header ul {
 }
 .info p {
   margin: 3rem;
+  font-size: large;
 }
 .profile-container {
   display: flex;
@@ -425,7 +439,7 @@ footer {
   justify-content: center;
   gap: 100px;
   margin-top: 100px;
-  padding: 3rem 3rem 0 3rem;
+  padding: 3rem;
 }
 div.footer a {
   color: white;
@@ -556,4 +570,23 @@ th.icon {
   border: none;
   background-color: white;
   color: #04702c;
+}
+/* ------------------FAQ---------------- */
+
+.text {
+  margin: 5% 10%;
+}
+.text h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+.text p {
+  font-size: large;
+}
+
+/*-------------------MEDIA QUERIES-------------------- */
+
+@media screen and (max-width: 767px) {
+  
 }

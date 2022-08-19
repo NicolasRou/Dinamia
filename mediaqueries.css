@@ -1,0 +1,20 @@
+@media screen and (max-width: 767px) {
+  header {
+    background-size: 150%;
+    background-position: 0 0px;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .nav-bar {
+    width: auto;
+    margin-top: 0px;
+  }
+  .main-nav {
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .nav-item a {
+    font-size: large;
+  }
+}

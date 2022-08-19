@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.region" content="UY" />
+    <meta name="geo.placename" content="Uruguay" />
+    <meta name="description"
+        content="Dinamia es un estudio de pilates ubicado en Montevideo. Informate por horarios en nuestra página. Probá tu primer clase gratis ¡Te esperamos!">
     <title>Dinamia estudio de pilates</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,200;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
         integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -34,6 +37,7 @@
                     <li class="nav-item"><a href="horarios.html">Horarios</a></li>
                     <li class="nav-item"><a href="#Nosotros">Nosotros</a></li>
                     <li class="nav-item"><a href="#Contacto">Contacto</a></li>
+                    <li class="nav-item"><a href="faq.html">FAQ</a></li>
                 </ul>
             </nav>
         </div>
@@ -58,16 +62,16 @@
                 </div>
                 <div class="slider">
                     <ul>
-                        <li><img src="/assets/img/grupo.jpg" alt="pilates" class="imgPilates"></li>
-                        <li><img src="/assets/img/clase.jpg" alt="pilates" class="imgPilates"></li>
+                        <li><img src="/assets/img/aros1421.jpg" alt="pilates" class="slider__img1"></li>
+                        <li><img src="/assets/img/pie-h.JPEG" alt="pilates" class="slider__img1"></li>
                     </ul>
                 </div>
             </section>
             <section class="card">
                 <div class="slider">
                     <ul>
-                        <li><img src="/assets/img/grupo.jpg" alt="pilates" class="imgPilates"></li>
-                        <li><img src="/assets/img/clase.jpg" alt="pilates" class="imgPilates"></li>
+                        <li><img src="/assets/img/grupo.jpg" alt="pilates" class="slider__img"></li>
+                        <li><img src="/assets/img/clase.jpg" alt="pilates" class="slider__img"></li>
                     </ul>
                 </div>
                 <div class="card__text">
@@ -94,16 +98,16 @@
                 </div>
                 <div class="slider">
                     <ul>
-                        <li><img src="/assets/img/grupo.jpg" alt="pilates" class="imgPilates"></li>
-                        <li><img src="/assets/img/clase.jpg" alt="pilates" class="imgPilates"></li>
+                        <li><img src="/assets/img/grupo.jpg" alt="pilates" class="slider__img"></li>
+                        <li><img src="/assets/img/clase.jpg" alt="pilates" class="slider__img"></li>
                     </ul>
                 </div>
             </section>
             <section class="card">
                 <div class="slider">
                     <ul>
-                        <li><img src="/assets/img/grupo.jpg" alt="pilates" class="imgPilates"></li>
-                        <li><img src="/assets/img/clase.jpg" alt="pilates" class="imgPilates"></li>
+                        <li><img src="/assets/img/grupo.jpg" alt="pilates" class="slider__img"></li>
+                        <li><img src="/assets/img/clase.jpg" alt="pilates" class="slider__img"></li>
                     </ul>
                 </div>
                 <div class="card__text">
@@ -118,11 +122,15 @@
         </div>
         <section class="container">
             <aside class="container__aside">
-                <h3>Te invitamos a solicitar tu primera clase <br> de prueba
-                    gratis.</h3>
-                <button class="container__aside__btn"> <a href="https://wa.me/59899517271">SOLICITAR</a> <i
-                        class="fa-brands fa-whatsapp"></i></button>
-
+                <div class="content__aside">
+                    <div>
+                         <h3>Te invitamos a solicitar tu primera clase <br> de prueba
+                        gratis.</h3>
+                        <a href="faq.html" class="content__aside__a"><p>Por más información y preguntas frecuentes. <i class="fa-solid fa-circle-info"></i></p></a>
+                    </div>
+                    <button class="content__aside__btn"> <a href="https://wa.me/59899517271">SOLICITAR</a> <i
+                            class="fa-brands fa-whatsapp"></i></button>
+                </div>
             </aside>
             <article class="container__article" id="Nosotros">
                 <div class="info">
@@ -290,15 +298,16 @@
     <footer>
         <div class="footer">
             <div class="footer__logo">
-                <img src="./assets/img/logoSF.png" alt="">
+                <img src="./assets/img/logo-blanco-p.png" alt="">
             </div>
             <nav class="footer__nav">
                 <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Clases</a></li>
-                    <li><a href="">Horarios</a></li>
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#Clases">Clases</a></li>
+                    <li><a href="horarios.html">Horarios</a></li>
+                    <li><a href="index.html#Nosotros">Nosotros</a></li>
+                    <li><a href="index.html#Contacto">Contacto</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </nav>
             <div class="footer__contacto">
