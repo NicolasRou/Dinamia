@@ -817,12 +817,8 @@ th.icon {
   .logo img {
     max-width: 250px;
   }
-  
-  .slider__img1 {
-    max-height: 80%;
-  }
-  .slider__img {
-    margin-top: 25%;
+  .no-slider {
+    margin: 80px 0px 0px;
   }
   .profile-container {
     margin: 20px;
