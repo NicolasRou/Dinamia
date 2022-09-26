@@ -11,8 +11,8 @@ function AddOrRemove(){
     }
     else{
         Nav.classList.remove("fixed");
-    // else if (window.pageXOffset < 700) {
-
-    // }
-    
+      
 }}
+
+// --- MENU HAMBURGUESA
+

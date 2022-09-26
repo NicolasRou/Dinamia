@@ -5,7 +5,6 @@
   border: none;
 }
 body {
-  /* background-color: #e3e2e4; */
   width: 100%;
   height: 100%;
   animation: fadeIn 3s;
@@ -104,7 +103,6 @@ header {
   width: 27%;
 }
 header ul {
-  /* display: inline-block; */
   margin: 0.5em auto;
   text-align: center;
   margin-top: 10px;
@@ -145,7 +143,6 @@ header ul {
 }
 .title {
   width: 50%;
-  /* margin: 150px 20px; */
   padding: 400px 20px;
 }
 .title h1 {
@@ -201,19 +198,34 @@ header ul {
   height: 90%;
   border-radius: 10px;
   object-fit: fill;
+  object-position: 80% 90%;
+  max-height: 360px;
 }
 .slider__img1 {
   width: 80%;
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
+  object-position: 20% 20%;
+}
+.plus {
+  object-fit: contain;
+  object-position: 50% 90%;
 }
 .slider {
   overflow: hidden;
   width: 100%;
   margin: 60px 0 0 0;
   text-align: center;
-  
+}
+.no-slider {
+  width: 100%;
+  margin: 60px 0 0 0;
+  text-align: center;
+}
+.no.slider li {
+  list-style: none;
+  width: 100%;
 }
 .slider ul {
   display: flex;
@@ -257,14 +269,6 @@ header ul {
   }
 }
 
-/* .img-container {
-  display: flex;
-  justify-content: center;
-}
-.img-container img {
-  margin: 5%;
-  width: 60%;
-} */
 /* --------INFO MID---------- */
 
 .container {
@@ -274,11 +278,10 @@ header ul {
 .content__aside__a {
   text-decoration: none;
   color: black;
-  
 }
 .content__aside {
   margin: 10%;
-   display: flex;
+  display: flex;
   gap: 15%;
 }
 .content__aside h3 {
@@ -320,8 +323,14 @@ header ul {
 /* -------Nostros-------- */
 .container__article {
   text-align: center;
-  margin-bottom:  10%;
+  margin-bottom: 10%;
   padding-top: 7%;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 .info h3 {
   font-weight: 200;
@@ -338,10 +347,9 @@ header ul {
   margin: 150px;
 }
 .profile h3 {
-  font-weight: 200;
+  font-weight: 500;
   color: black;
 }
-
 .profile__img {
   width: 250px;
   border-radius: 100px;
@@ -499,10 +507,6 @@ li a:hover {
 header.horarios {
   width: 100%;
   background: rgba(110, 139, 121, 0.9);
-  background-position: 50% 65%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   height: 160px;
 }
 .main {
@@ -512,7 +516,6 @@ header.horarios {
   display: flex;
   margin: 100px 0 100px 10%;
   gap: 10rem;
-  
 }
 .contain__section h1 {
   margin: 80px 0 50px;
@@ -533,12 +536,13 @@ header.horarios {
   text-decoration: none;
 }
 .contain-a a:hover {
-    transition: all 0.2s ease;
-    color: rgb(45, 150, 31);
+  transition: all 0.2s ease;
+  color: rgb(45, 150, 31);
 }
 .container-table {
   border-bottom: 1px solid;
   padding-bottom: 50px;
+  overflow-x: auto;
 }
 table {
   background: url(./assets/img/principal.jpg);
@@ -552,6 +556,10 @@ table {
   border-spacing: 20px 20px;
   margin: 0 auto;
 }
+.table {
+  min-width: 950px;
+}
+
 td {
   padding: 5px;
   background-color: white;
@@ -586,7 +594,3 @@ th.icon {
 }
 
 /*-------------------MEDIA QUERIES-------------------- */
-
-@media screen and (max-width: 767px) {
-  
-}

@@ -1,10 +1,22 @@
 @media screen and (max-width: 767px) {
   header {
-    background-size: 150%;
     background-position: 0 0px;
+    background-repeat: no-repeat;
+    background-size: 350%;
+    height: 100vh;
+    background-attachment: inherit;
   }
   .header {
     flex-direction: column;
+  }
+  .fixed {
+    max-height: 90%;
+    max-width: 100vw;
+    display: none;
+  }
+  .logo img {
+    max-width: 200px;
+    height: 100%;
   }
   .nav-bar {
     width: auto;
@@ -17,4 +29,188 @@
   .nav-item a {
     font-size: large;
   }
+  .title h1 {
+    font-size: large;
+  }
+  /* ---------MAIN----- */
+  .container-cards {
+    margin: 0;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+  .content__aside {
+    display: flex;
+    flex-direction: column;
+  }
+  .content__aside h3 {
+    font-size: 2em;
+  }
+  .info {
+    margin-bottom: 100px;
+  }
+  .profile-container {
+    flex-direction: column;
+    margin: 100px 10px;
+    gap: 50px;
+  }
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 100px;
+  }
+  .contacto__div {
+    margin: 10px 20px;
+    width: 100%;
+  }
+  .contacto__div h2 {
+    font-size: 2em;
+  }
+  .contacto__div p {
+    margin: 15px;
+  }
+  iframe {
+    max-width: 90%;
+  }
+  .post-ig h3 {
+    font-size: 1.5em;
+    margin: 50px 10px;
+  }
+  .ig {
+    margin: 0px;
+  }
+  .container-form {
+    margin: 10px;
+  }
+  .container-form h3 {
+    font-size: 1.5em;
+  }
+  .form {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 0px;
+    max-width: 100%;
+  }
+  .footer__nav ul {
+    gap: 10px;
+  }
+  .footer__social {
+    flex-direction: row;
+    gap: 30px;
+  }
+  /* --------------HORARIOS---------------- */
+  header.horarios {
+    height: 250px;
+  }
+  .contain {
+    flex-direction: column;
+    gap: 20px;
+    margin: 7px;
+    max-width: 100%;
+  }
+  .contain-a {
+    border: none;
+  }
+  /* -------FAQ------ */
+  .contain__section h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    background-position: 0 0px;
+    background-repeat: no-repeat;
+    background-size: 180%;
+    height: 100vh;
+    background-attachment: inherit;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .fixed {
+    max-height: 90%;
+    max-width: 100vw;
+    /* display: none; */
+  }
+  .logo img {
+    max-width: 200px;
+    height: 100%;
+  }
+  .nav-bar {
+    width: auto;
+    margin-top: 0px;
+  }
+  .main-nav {
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .container-cards {
+    margin: 0px;
+  }
+  .profile-container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .contacto {
+    flex-wrap: wrap;
+  }
+  .contacto__div {
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+  }
+  .post-ig {
+    margin: 10px;
+  }
+  .container-form {
+    margin: 10px;
+  }
+  .container-form h3 {
+    font-size: 1.5em;
+  }
+  .form {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 0px;
+    max-width: 100%;
+  }
+  .footer__logo {
+    text-align: center;
+  }
+  .footer__nav ul {
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer__social {
+    flex-direction: row;
+    gap: 30px;
+  }
+  /* -----------HORARIOS-------- */
+  header.horarios {
+    height: 200px;
+  }
+  .contain {
+    flex-direction: column;
+    gap: 20px;
+    margin: 7px;
+    max-width: 100%;
+  }
+  .contain-a {
+    border: none;
+  }
+  /* -------FAQ------ */
+  .contain__section h1 {
+    font-size: 3em;
+  }
+
 }
