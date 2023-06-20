@@ -722,8 +722,8 @@ th.icon {
   }
   /* --------------HORARIOS---------------- */
   header.horarios {
-    height: 230px;
-    width: 100%;
+        width: 100%;
+        height: 130px;
   }
   .logo img {
     max-height: 90px;
@@ -889,6 +889,7 @@ th.icon {
     font-size: 1.25rem;
     background-color: transparent;
     cursor: pointer;
+    margin-bottom: 1%;
   }
   .abrir-menu {
     color: #1c1c1c;
